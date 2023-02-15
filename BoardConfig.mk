@@ -98,3 +98,10 @@ TW_NO_REBOOT_BOOTLOADER := true
 TW_EXCLUDE_SUPERSU := true
 
 TW_EXTRA_LANGUAGES := false
+
+TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/devices/msm_dwc3/f9200000.dwc3/gadget/lun%d/file"
+TW_BRIGHTNESS_PATH := "/sys/devices/mdp.0/qcom\x2cmdss_fb_primary.185/leds/lcd-backlight/brightness"
+
+# Platform
+TARGET_BOARD_PLATFORM := msm8974
+TARGET_BOARD_PLATFORM_GPU := qcom-adreno330
